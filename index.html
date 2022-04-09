@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hillock Coffee</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="Untitled-2.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/microtip.css">
+<style>
+img {
+	max-width: 100%;
+	height: auto;
+}
+hr {
+	border: 0;
+	border-top: 2px solid brown;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted rgb(5, 5, 5);
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+.cover {
+	width: 100%;
+	overflow: hidden;
+}
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<div class="cover">
+  <div class="headerlogo"></div>
+  <div class="topnav">
+    <div class="toplogo"> <img src="logo1.png" alt="Logo" /> </div>
+    <div class="search-container">
+      <input type="text" placeholder="search entire web site here" name="search">
+      <button type="submit"> <i class="fa fa-search"></i> GO </button>
+    </div>
+    <div class="toplinks"> <a class="active" href="#Home">Home</a> <a href="#about">About</a> <a href="#Delivery">Delivery</a> <a href="#news">News</a> <a href="#reserve">Reservation</a> </div>
+  </div>
+  <div>
+    <div class="bannersection"> <span class="bannertext" style="margin-top: 260px;">BETTER
+      &nbsp; &nbsp;BEAN &nbsp;&nbsp;BETTER &nbsp;&nbsp; COFFEE</span> </div>
+    <div class="bodysection">
+      <div class="bodyinnernote" id="about">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-5 col-md-4"><img src="nicepik.com_11832_5120x2880.jpg" width="5120" height="2880" alt="about our coffee"></div>
+            <div class="col-12 col-sm-7 col-md-8">
+              <p style="margin-top: 10px;"> <b>ABOUT OUR COFFEE</b> <br>
+                <br>
+                Hillock coffee is a team
+                of passionate people with an incredible love for coffee. Our story
+                begins more than a century ago when our family first ventured in to
+                the world of coffee roasting business. Today we are committed to
+                keeping the tradition alive and bringing the highest quality of
+                coffee to our customers. Coffee is darkly colored,bitter,slightly
+                acidic and has a stimulating effect in humans.primarily due to its
+                caffeine content. it is one of the most popular drinks in the world
+                and it can be prepared and presented in a variety of ways.It is
+                usually served hot,although iced coffee is a popular
+                alternative.clinical study indicate that moderate coffee
+                consumption is benign or mildly beneficial in healthy adults,with
+                continuing research on whether long term consumption lower the risk
+                of some diseases. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bodyinnernote" style="margin-top: 30px">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-7 col-md-8">
+              <p> <b>WHOLE SALE ENQUIRIES</b> <br>
+                <br>
+                You can have a busy cafe,restaurant,or business that serves amazing coffee to the
+                community that supports you.                If you value exceptional coffee and
+                service, we at Quills want to partner with you to help fine-tune
+                your hospitality 
+                efforts and coffee program so you can do just
+                that. You can have a busy cafe,restaurant,or business that serves 
+                amazing coffee to the community that supports you.If you value
+                exceptional coffee and service, we at Quills want 
+                to partner with
+                you to help fine-tune your hospitality efforts and coffee program
+                so you can do just that. </p>
+            </div>
+            <div class="col-12 col-sm-5 col-md-4"><img src="Quills_Coffee_Roasting_Wholesale_720x.jpg" width="720" height="479" alt="wholesale" class="img-responsive"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="varietyofcoffee">
+      <div style="margin-left: 5%; color: #FFF; font-size: 26px;">VARIETY
+        OF COFFEE</div>
+      <div class="container-fluid">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;"> <img src="images/myfolder/coffee-cup.jpeg" title="Cappuccino" alt="Image1"> <img src="images/myfolder/coffee-cup2.jpeg" alt="latte" title="Latte"> <img src="images/myfolder/coffee-cup3.jpg" alt="Ethiopian"  title="Ethiopian Coffee"> <img src="images/myfolder/coffee-cup4.jpg" alt="" title="Indonesian Kopi Tubruk"> <img src="images/myfolder/coffee-cup5.jpg" alt="Viennese " title="Viennese Coffee"> <img src="images/myfolder/coffee.jpg" alt="Kopi" title="Kopi Luwak"> </div>
+      </div>
+    </div>
+    <div class="footersection">
+      <div class="container">
+        <div class="opening-time-closetym reservationtable"
+				style="position: relative;">
+          <div style="font-size: 35px; color: #FFF; padding-top: 10px; font-weight: bold;">OPENING
+            TIME/CLOSING TIME</div>
+          <div style="font-size: 30px; color: #FFF; padding-top: 20px;">Mon-wed-09:00am
+            to 7:30pm</div>
+          <div style="font-size: 30px; color: #FFF;">Thu-Fri-09:00am to
+            6:30pm</div>
+          <div style="font-size: 30px; color: #FFF;">Sat-sun-11:30am to
+            8:30pm</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="reservationtable">
+              <div id="reserve" class="reservationtabletext">TABLE
+              RESERVATION</div>
+              <form style="padding: 10px;" >
+                <div class="form-group">
+                  <label for="date" style="color: #FFF;">Date</label>
+                  <input type="date" class="form-control" id="date">
+                <small id="emailHelp" class="form-text text-muted">please enter your date</small> </div>
+                <div class="form group">
+                  <label for="name" style="color: #FFF;">Name</label>
+                  <input type="text" class="form-control" id="name"/>
+                </div>
+                <div class="form-group">
+                  <label for="description" style="color: #FFF;">Description</label>
+                  <textarea name="description" cols="40" rows="6" class="form-control" id="description" placeholder="Description"></textarea>
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary"	style="float: right;">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>      
+		</div>
+    </div>
+    <hr>
+  </div>
+  <div class="footersectiontwo">
+    <div class="container">
+      <div class="footergroup">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About the company</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">career</a></li>
+          <li><a href="#">Address</a></li>
+        </ul>
+        <div class="headersearchicon"></div>
+      </div>
+      <div class="footergroup">
+        <h5>Customer support</h5>
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footergroup">
+        <h5>Follow Us</h5>
+        <ul>
+          <li>&nbsp;</li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<script>
+		$("#submit").click(function submit() {
+			alert("Reservation for "+$("#name").val()+" is successfully completed");
+		});
+	</script>
+</body>
+</html>

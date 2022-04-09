@@ -1,0 +1,385 @@
+sub @charset "utf-8";
+/* CSS Document */
+
+.headersection {
+/*width:100%;
+	height:106px;
+	margin:0 auto;
+	float:left;*/
+}
+.menusection {
+	background-color: #000;
+	width: 100%;
+	height: 50px;
+	padding-right: 20px;
+}
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+	overflow: hidden;
+	background-color: #201717;
+}
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: right;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	color: #FFF;
+}
+.toplogo {
+	float : left;
+}
+.topnav a:hover {
+	background-colour: #ddd;
+	color: rgb(247, 241, 241);
+}
+.topnav a.active {
+	background-colour: #2196f3;
+	colour: white;
+}
+.topnav .search-container {
+	float: left;
+}
+.topnav input[ type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+	float: left;
+}
+.toplinks {
+	float: right;
+}
+.topnav .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+.topvav .search-container button:hover {
+	background: #ccc;
+}
+.topnav .search-container {
+	float: right;
+	margin-right: 20px;
+}
+.bannersection {
+	background: url(cup-and-beans1.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 607px;
+	background-size: cover;
+}
+.bodysection {
+	background: url(nathan-dumlao-593271-unsplash.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 60px 15px;
+	background-size: cover;
+	margin: 0 auto;
+	background-blend-mode: overlay;
+}
+.aboutourcoffeeIMG {
+	width: 35%;
+	height: 266px;
+	background-image: url(nicepik.com_11832_5120x2880.jpg);
+	float: left;
+	background-size: 100%;
+	margin-left: 50px;
+	margin-top: 54px;
+}
+.wholesaleenquiries {
+	height: auto;
+	width: 50%;
+	color: white;
+	text-align: justify;
+}
+.varietyofcoffee {
+	width: 100%;
+	background: #000;
+	margin-top: 0px;
+}
+.opening-time-closetym {
+}
+.sub-timing {
+	position: relative;
+	color: #FFF;
+	font-weight: bold;
+	padding-top: 70px;
+	font-size: 35px;
+	margin-left: 420px;
+}
+.sub-timingdate1 {
+	position: relative;
+	color: #FFF;
+	padding-top: 45px;
+	font-size: 30px;
+	margin-left: 480px;
+}
+.sub-timingdate2 {
+	position: relative;
+	color: #FFF;
+	padding-top: 40px;
+	font-size: 30px;
+	margin-left: 490px;
+}
+.sub-timingdate3 {
+	position: relative;
+	color: #FFF;
+	padding-top: 34px;
+	font-size: 30px;
+	margin-left: 490px;
+}
+.reservationtable {
+	border-color: #0F3;
+	position: relative;
+}
+.reservationtabletext {
+	position: relative;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 35px;
+	margin-top: 194px;
+}
+.Date {
+	margin-left: 25px;
+	width: 20%;
+	height: 25px;
+	margin-top: 35px;
+}
+.time {
+	margin-left: 25px;
+	width: 20%;
+	margin-top: 2px;
+}
+.description {
+	margin-left: 25px;
+	width: 20%;
+	padding-top: 6px;
+}
+.varietyofcoffeetext {
+	width: 20%;
+	height: 20px;
+	color: #FFF;
+	float: left;
+	margin-left: 140px;
+	font-size: 26px;
+	margin-top: 30px;
+}
+.image-content {
+	margin-top: 72px;
+}
+.img-variety1 {
+	padding-left: 15px
+}
+.img-variety2 {
+	padding-left: 10px
+}
+.img-variety3 {
+	padding-left: 10px
+}
+.image-content2 {
+	margin-top: 5px;
+}
+.column {
+	float: left;
+	width: 59%;
+	padding: 5px;
+	color: white;
+}
+.column p {
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	paddind: 10px 15px;
+	margin: 0;
+	font-size: 17px;
+	margin-top: 20px;
+}
+/*
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.row {
+	display: flex;
+}
+*/
+.wholesaleenquiries p {
+	padding: 30px 28px;
+	margin: 0;
+	font-size: 17px;
+}
+.wholesaleimg {
+	width: 35%;
+	height: 266px;
+	float: right;
+	background-size: 100%;
+	background-image: url(Quills_Coffee_Roasting_Wholesale_720x.jpg);
+	background-repeat: no-repeat;
+	margin-top: 60px;
+}
+.bodyinnernote {
+	color: white;
+	text-align: justify;
+}
+.bodyinnernote p {
+	padding-top: 10px;
+	padding-right: 42px;
+	padding-left: 10px;
+	margin: 0;
+	font-size: 17px;
+	margin-bottom: 24px;
+}
+.top {
+	width: 248px;
+	height: 40px;
+	border: 1px solid #333;
+	margin-left: 167px;
+	text-align: center;
+	padding-top: 50px;
+	font-weight: bold;
+}
+.sub-top {
+	width: 248px;
+	height: 40px;
+	border: 1px solid #333;
+	margin-left: 167px;
+	text-align: center;
+	padding-top: 50px;
+	font-weight: bold;
+	color: white;
+}
+.bottom {
+	width: 248px;
+	height: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #333;
+	border-left-color: #333;
+}
+.bannertext {
+	color: white;
+	letter-spacing: 6px;
+	padding: 5%;
+	float: right;
+	margin-top: 40%;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px #280e0b, 1px 1px 5px #280E0B, 1px 1px 5px #280E0B, 1px 1px 5px #280E0B;
+}
+.footersection {
+	width: 100%;
+	height: 1010px;
+	float: left;
+	background-size: 100%;
+	margin-left: 35px;
+	background: url(nicepik.com_4726_1920x1080.jpg);
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+.footersection openingtime {
+	width: 40%;
+	height: 15px;
+	color: #FFF;
+	float: left;
+}
+.footersectioninnertext {
+	width: 30%;
+	height: 55px;
+	color: white;
+	float: left;
+	font-size: 25px;
+	text-align: center;
+	font-style: normal;
+	margin-left: 170px;
+	padding-top: 50px;
+}
+.footersectiontwo {
+	width: 100%;
+	height: 182px;
+	margin: 0 auto;
+	background: #272626;
+	float: left;
+	margin-bottom: 0px;
+	background-size: 100%;
+}
+.footergroup {
+	float: left;
+	padding-right: 70px;
+	margin-bottom: 50px;
+}
+.footergroup h5 {
+	color: #888888;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0px 0px 0px 0px;
+	margin-left: 20px;
+}
+.footergroup li {
+	padding: 3px 0px;
+	list-style: none;
+}
+.footergroup li a {
+	font-size: 14px;
+	color: #6c6c6c;
+	text-decoration: none;
+}
+.footergroup li a:hover {
+	text-decoration: underline;
+}
+.socialmediaicon li {
+	list-style: none;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+.socialmediaicon li a
+}
+#headersection.headerlogo {
+	float: right;
+	padding: 10px opx;
+}
+.headersearch {
+	float: right;
+	margin: 5px 0px 50px;
+}
+#headersection.headersearch input[type="text"] {
+	border: 1px solid #cccccc;
+	padding: 5px 30px 5px 10px;
+	width: 180px;
+	border-radius: 5px;
+}
+#headersection.headersearchicon {
+	width: 40px;
+	height: 30px;
+	background-image: url(magnifying-glass.png);
+	border: 0px solid #fff;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.facebook {
+	background-image: url(socialmedia%20icone/facebook.svg);
+	float: left;
+}
+.instagram {
+	background-image: url(socialmedia%20icone/instagram.svg);
+	float: left;
+}
