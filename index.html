@@ -15,7 +15,22 @@ img {
 }
 hr {
 	border: 0;
+	margin: 0px;
 	border-top: 2px solid brown;
+}
+/*
+.navbar-default.topnav {
+    background: #201717;
+    border: none;
+    border-radius: 0px;
+	margin-bottom: 0px;
+}
+	.navbar-default.topnav .navbar-brand{
+		height: auto;
+	}
+*/
+#menubtn {
+	display: none;
 }
 .tooltip {
 	position: relative;
@@ -41,45 +56,111 @@ hr {
 	width: 100%;
 	overflow: hidden;
 }
+.grid-3 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 24px;
+}
+.nav-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width:991px) {
+#menubtn {
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -13px;
+	background-color: #e6d0b8;
+}
+#menutoggle.active {
+	display: block;
+}
+#menutoggle {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	right: 0px;
+	bottom: auto;
+	background-color: #201717;
+	padding: 12px;
+}
+.nav-flex {
+	display: block;
+}
+.topnav a {
+	float: none;
+	text-align: left;
+}
+}
+
+@media (max-width:767px) {
+.grid-3 {
+	grid-template-columns: auto auto;
+}
+}
+
+@media (max-width:319px) {
+.grid-3 {
+	grid-template-columns: auto;
+}
+}
 </style>
 </head>
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<div class="cover">
-  <div class="headerlogo"></div>
-  <div class="topnav">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+<div class="cover"> 
+  <!--  <div class="headerlogo"></div>-->
+  <div class="topnav nav-flex">
     <div class="toplogo"> <img src="logo1.png" alt="Logo" /> </div>
-    <div class="search-container">
-      <input type="text" placeholder="search entire web site here" name="search">
-      <button type="submit"> <i class="fa fa-search"></i> GO </button>
+    <button type="button" id="menubtn">&#9776;</button>
+    <div id="menutoggle" class="nav-flex">
+      <div class="toplinks"> <a class="active" href="#Home">Home</a> <a href="#about">About</a> <a href="#Delivery">Delivery</a> <a href="#news">News</a> <a href="#reserve">Reservation</a> </div>
+      <div class="search-container">
+        <input type="text" placeholder="search entire web site here" name="search">
+        <button type="submit"> <i class="fa fa-search"></i> GO </button>
+      </div>
     </div>
-    <div class="toplinks"> <a class="active" href="#Home">Home</a> <a href="#about">About</a> <a href="#Delivery">Delivery</a> <a href="#news">News</a> <a href="#reserve">Reservation</a> </div>
   </div>
+  <!--<nav class="navbar navbar-default topnav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand" href="#"><img src="logo1.png" alt="Logo" /></a></div>
+      <div class="collapse navbar-collapse" id="defaultNavbar1">
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+		<ul class="nav navbar-nav navbar-right toplinks">
+          <li class="active"><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+			<li><a href="#Delivery">Delivery</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#reserve">Reservation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>-->
   <div>
-    <div class="bannersection"> <span class="bannertext" style="margin-top: 260px;">BETTER
-      &nbsp; &nbsp;BEAN &nbsp;&nbsp;BETTER &nbsp;&nbsp; COFFEE</span> </div>
+    <div class="bannersection">
+      <h1> <span class="bannertext">BETTER BEAN BETTER COFFEE</span></h1>
+    </div>
     <div class="bodysection">
       <div class="bodyinnernote" id="about">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-sm-5 col-md-4"><img src="nicepik.com_11832_5120x2880.jpg" width="5120" height="2880" alt="about our coffee"></div>
+            <div class="col-12 col-sm-5 col-md-4"><img src="hillockcoffee_abt1.jpg"  alt="about our coffee" width="1200" height="675"></div>
             <div class="col-12 col-sm-7 col-md-8">
-              <p style="margin-top: 10px;"> <b>ABOUT OUR COFFEE</b> <br>
-                <br>
-                Hillock coffee is a team
-                of passionate people with an incredible love for coffee. Our story
-                begins more than a century ago when our family first ventured in to
-                the world of coffee roasting business. Today we are committed to
-                keeping the tradition alive and bringing the highest quality of
-                coffee to our customers. Coffee is darkly colored,bitter,slightly
-                acidic and has a stimulating effect in humans.primarily due to its
-                caffeine content. it is one of the most popular drinks in the world
-                and it can be prepared and presented in a variety of ways.It is
-                usually served hot,although iced coffee is a popular
-                alternative.clinical study indicate that moderate coffee
-                consumption is benign or mildly beneficial in healthy adults,with
-                continuing research on whether long term consumption lower the risk
-                of some diseases. </p>
+              <h2>ABOUT OUR COFFEE</h2>
+              <p>Hillock coffee is a team of passionate people with an incredible love for coffee. Our story begins more than a century ago when our family first ventured in to the world of coffee roasting business. Today we are committed to keeping the tradition alive and bringing the highest quality of coffee to our customers. Coffee is darkly colored,bitter,slightly acidic and has a stimulating effect in humans.primarily due to its caffeine content. it is one of the most popular drinks in the world and it can be prepared and presented in a variety of ways. It is usually served hot,although iced coffee is a popular alternative. Clinical study indicate that moderate coffee consumption is benign or mildly beneficial in healthy adults, with continuing research on whether long term consumption lower the risk of some diseases. </p>
             </div>
           </div>
         </div>
@@ -88,19 +169,8 @@ hr {
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 col-sm-7 col-md-8">
-              <p> <b>WHOLE SALE ENQUIRIES</b> <br>
-                <br>
-                You can have a busy cafe,restaurant,or business that serves amazing coffee to the
-                community that supports you.                If you value exceptional coffee and
-                service, we at Quills want to partner with you to help fine-tune
-                your hospitality 
-                efforts and coffee program so you can do just
-                that. You can have a busy cafe,restaurant,or business that serves 
-                amazing coffee to the community that supports you.If you value
-                exceptional coffee and service, we at Quills want 
-                to partner with
-                you to help fine-tune your hospitality efforts and coffee program
-                so you can do just that. </p>
+              <h2>WHOLE SALE ENQUIRIES</h2>
+              <p>You can have a busy cafe,restaurant,or business that serves amazing coffee to the community that supports you. If you value exceptional coffee and service, we at Quills want to partner with you to help fine-tune your hospitality efforts and coffee program so you can do just that. You can have a busy cafe, restaurant, or business that serves amazing coffee to the community that supports you. If you value exceptional coffee and service, we at Quills want to partner with you to help fine-tune your hospitality efforts and coffee program so you can do just that. </p>
             </div>
             <div class="col-12 col-sm-5 col-md-4"><img src="Quills_Coffee_Roasting_Wholesale_720x.jpg" width="720" height="479" alt="wholesale" class="img-responsive"></div>
           </div>
@@ -108,10 +178,9 @@ hr {
       </div>
     </div>
     <div class="varietyofcoffee">
-      <div style="margin-left: 5%; color: #FFF; font-size: 26px;">VARIETY
-        OF COFFEE</div>
+      <h2 style="margin-left: 5%; color: #FFF; font-size: 26px; margin-bottom: 20px;">VARIETY OF COFFEE</h2>
       <div class="container-fluid">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;"> <img src="images/myfolder/coffee-cup.jpeg" title="Cappuccino" alt="Image1"> <img src="images/myfolder/coffee-cup2.jpeg" alt="latte" title="Latte"> <img src="images/myfolder/coffee-cup3.jpg" alt="Ethiopian"  title="Ethiopian Coffee"> <img src="images/myfolder/coffee-cup4.jpg" alt="" title="Indonesian Kopi Tubruk"> <img src="images/myfolder/coffee-cup5.jpg" alt="Viennese " title="Viennese Coffee"> <img src="images/myfolder/coffee.jpg" alt="Kopi" title="Kopi Luwak"> </div>
+        <div class="grid-3"> <img src="images/myfolder/coffee-cup.jpeg" title="Cappuccino" alt="Image1"> <img src="images/myfolder/coffee-cup2.jpeg" alt="latte" title="Latte"> <img src="images/myfolder/coffee-cup3.jpg" alt="Ethiopian"  title="Ethiopian Coffee"> <img src="images/myfolder/coffee-cup4.jpg" alt="" title="Indonesian Kopi Tubruk"> <img src="images/myfolder/coffee-cup5.jpg" alt="Viennese " title="Viennese Coffee"> <img src="images/myfolder/coffee.jpg" alt="Kopi" title="Kopi Luwak"> </div>
       </div>
     </div>
     <div class="footersection">
@@ -131,15 +200,15 @@ hr {
           <div class="col-sm-12 col-md-6">
             <div class="reservationtable">
               <div id="reserve" class="reservationtabletext">TABLE
-              RESERVATION</div>
+                RESERVATION</div>
               <form style="padding: 10px;" >
                 <div class="form-group">
                   <label for="date" style="color: #FFF;">Date</label>
                   <input type="date" class="form-control" id="date">
-                <small id="emailHelp" class="form-text text-muted">please enter your date</small> </div>
+                  <small id="emailHelp" class="form-text text-muted">please enter your date</small> </div>
                 <div class="form group">
                   <label for="name" style="color: #FFF;">Name</label>
-                  <input type="text" class="form-control" id="name"/>
+                  <input type="text" class="form-control" id="name" placeholder="Name"/>
                 </div>
                 <div class="form-group">
                   <label for="description" style="color: #FFF;">Description</label>
@@ -149,8 +218,8 @@ hr {
               </form>
             </div>
           </div>
-        </div>      
-		</div>
+        </div>
+      </div>
     </div>
     <hr>
   </div>
@@ -177,8 +246,9 @@ hr {
       <div class="footergroup">
         <h5>Follow Us</h5>
         <ul>
-          <li>&nbsp;</li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagrame</a></li>
+          <li><a href="#">Twitter</a></li>
         </ul>
       </div>
     </div>
@@ -186,9 +256,24 @@ hr {
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 <script>
-		$("#submit").click(function submit() {
-			alert("Reservation for "+$("#name").val()+" is successfully completed");
+		$(document).ready(function(){
+			$("#submit").click(function submit() {
+				alert("Reservation for "+$("#name").val()+" is successfully completed");
+			});
+			
+			$("#menubtn").click(function(){
+				$("#menutoggle").toggleClass("active");
+			});
+			
+			$(window).resize(function(){
+				var brwdth = $(window).width();
+				if(brwdth>991){
+					$("#menutoggle").removeClass("active");
+				}
+			});
+			
 		});
+		
 	</script>
 </body>
 </html>
