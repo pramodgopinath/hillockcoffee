@@ -18,8 +18,9 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 .topnav {
-	overflow: hidden;
+	overflow: visible;
 	background-color: #201717;
+	position: relative;
 }
 .topnav a {
 	float: left;
@@ -32,7 +33,7 @@ body {
 	color: #FFF;
 }
 .toplogo {
-	float : left;
+	float : none;
 }
 .topnav a:hover {
 	background-colour: #ddd;
@@ -44,21 +45,22 @@ body {
 }
 .topnav .search-container {
 	float: left;
+	display: flex;
 }
 .topnav input[ type=text] {
-	padding: 6px;
-	margin-top: 8px;
-	font-size: 17px;
-	border: none;
-	float: left;
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    display: block;
+    width: 100%;
 }
 .toplinks {
-	float: right;
+	float: none;
 }
 .topnav .search-container button {
 	float: right;
 	padding: 6px 10px;
-	margin-top: 8px;
 	margin-right: 16px;
 	background: #ddd;
 	font-size: 17px;
@@ -69,18 +71,25 @@ body {
 	background: #ccc;
 }
 .topnav .search-container {
-	float: right;
 	margin-right: 20px;
 }
 .bannersection {
-	background: url(cup-and-beans1.jpg);
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 607px;
-	background-size: cover;
+    background: url(cup-and-beans1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25vw 5%;
+}
+.bannersection h1{
+	text-align: center;
+	width:100%;
 }
 .bodysection {
-	background: url(nathan-dumlao-593271-unsplash.jpg);
+	background-image: url(aboutbg.jpg);
 	background-repeat: no-repeat;
 	width: 100%;
 	padding: 60px 15px;
@@ -104,11 +113,10 @@ body {
 	text-align: justify;
 }
 .varietyofcoffee {
-	width: 100%;
-	background: #000;
-	margin-top: 0px;
-}
-.opening-time-closetym {
+    width: 100%;
+    background: #000;
+    margin-top: 0px;
+    padding: 60px 24px;
 }
 .sub-timing {
 	position: relative;
@@ -230,7 +238,7 @@ body {
 }
 .bodyinnernote {
 	color: white;
-	text-align: justify;
+	text-align: left;
 }
 .bodyinnernote p {
 	padding-top: 10px;
@@ -276,21 +284,20 @@ body {
 .bannertext {
 	color: white;
 	letter-spacing: 6px;
-	padding: 5%;
-	float: right;
-	margin-top: 40%;
+	padding-top: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 5%;
 	font-weight: bold;
 	text-shadow: 1px 1px 5px #280e0b, 1px 1px 5px #280E0B, 1px 1px 5px #280E0B, 1px 1px 5px #280E0B;
+	display: block;
 }
 .footersection {
 	width: 100%;
-	height: 1010px;
-	float: left;
-	background-size: 100%;
-	margin-left: 35px;
-	background: url(nicepik.com_4726_1920x1080.jpg);
-	background-repeat: no-repeat;
+	background-image: url(footerbg.jpg);
+	background-size: cover;
 	margin: 0 auto;
+	padding: 60px 20px;
 }
 .footersection openingtime {
 	width: 40%;
@@ -310,13 +317,12 @@ body {
 	padding-top: 50px;
 }
 .footersectiontwo {
-	width: 100%;
-	height: 182px;
-	margin: 0 auto;
-	background: #272626;
-	float: left;
-	margin-bottom: 0px;
-	background-size: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: #272626;
+    margin-bottom: 0px;
+    background-size: 100%;
+    padding: 60px 20px 10px;
 }
 .footergroup {
 	float: left;
@@ -349,8 +355,7 @@ body {
 	height: 30px;
 	margin-right: 5px;
 }
-.socialmediaicon li a
-}
+
 #headersection.headerlogo {
 	float: right;
 	padding: 10px opx;
