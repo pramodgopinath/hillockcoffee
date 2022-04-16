@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="zxx"><!-- InstanceBegin template="/Templates/Hillock-Template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="zxx">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>Hillock Coffee</title>
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link href="Untitled-2.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="css/microtip.css">
+<link href="../Untitled-2.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/microtip.css">
 <style>
 img {
 	max-width: 100%;
@@ -112,15 +112,15 @@ hr {
 }
 }
 </style>
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 <body>
-<script src="js/jquery-1.11.3.min.js"></script>
+<script src="../js/jquery-1.11.3.min.js"></script>
 <div class="cover"> 
   <!--  <div class="headerlogo"></div>-->
   <div class="topnav nav-flex">
-    <div class="toplogo"> <img src="logo1.png" alt="Logo" /> </div>
+    <div class="toplogo"> <img src="../logo1.png" alt="Logo" /> </div>
     <button type="button" id="menubtn">&#9776;</button>
     <div id="menutoggle" class="nav-flex">
       <div class="toplinks"> <a class="active" href="#Home">Home</a> <a href="#about">About</a> <a href="#Delivery">Delivery</a> <a href="#news">News</a> <a href="#reserve">Reservation</a> </div>
@@ -151,7 +151,7 @@ hr {
         </ul>
       </div>
     </div>
-  </nav>--><!-- InstanceBeginEditable name="ContentArea1" -->
+  </nav>--><!-- TemplateBeginEditable name="ContentArea1" -->
   <div class="bannersection">
     <h1> <span class="bannertext">BETTER BEAN BETTER COFFEE</span></h1>
   </div>
@@ -159,7 +159,7 @@ hr {
     <div class="bodyinnernote" id="about">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-sm-5 col-md-4"><img src="hillockcoffee_abt1.jpg"  alt="about our coffee" width="1200" height="675"></div>
+          <div class="col-12 col-sm-5 col-md-4"><img src="../hillockcoffee_abt1.jpg"  alt="about our coffee" width="1200" height="675"></div>
           <div class="col-12 col-sm-7 col-md-8">
             <h2>ABOUT OUR COFFEE</h2>
             <p>Hillock coffee is a team of passionate people with an incredible love for coffee. Our story begins more than a century ago when our family first ventured in to the world of coffee roasting business. Today we are committed to keeping the tradition alive and bringing the highest quality of coffee to our customers. Coffee is darkly colored,bitter,slightly acidic and has a stimulating effect in humans.primarily due to its caffeine content. it is one of the most popular drinks in the world and it can be prepared and presented in a variety of ways. It is usually served hot,although iced coffee is a popular alternative. Clinical study indicate that moderate coffee consumption is benign or mildly beneficial in healthy adults, with continuing research on whether long term consumption lower the risk of some diseases. </p>
@@ -174,7 +174,7 @@ hr {
             <h2>WHOLE SALE ENQUIRIES</h2>
             <p>You can have a busy cafe,restaurant,or business that serves amazing coffee to the community that supports you. If you value exceptional coffee and service, we at Quills want to partner with you to help fine-tune your hospitality efforts and coffee program so you can do just that. You can have a busy cafe, restaurant, or business that serves amazing coffee to the community that supports you. If you value exceptional coffee and service, we at Quills want to partner with you to help fine-tune your hospitality efforts and coffee program so you can do just that. </p>
           </div>
-          <div class="col-12 col-sm-5 col-md-4"><img src="Quills_Coffee_Roasting_Wholesale_720x.jpg" width="720" height="479" alt="wholesale" class="img-responsive"></div>
+          <div class="col-12 col-sm-5 col-md-4"><img src="../Quills_Coffee_Roasting_Wholesale_720x.jpg" width="720" height="479" alt="wholesale" class="img-responsive"></div>
         </div>
       </div>
     </div>
@@ -182,10 +182,10 @@ hr {
   <div class="varietyofcoffee">
     <h2 style="margin-left: 5%; color: #FFF; font-size: 26px; margin-bottom: 20px;">VARIETY OF COFFEE</h2>
     <div class="container-fluid">
-      <div class="grid-3"> <img src="images/myfolder/coffee-cup.jpeg" title="Cappuccino" alt="Image1"> <img src="images/myfolder/coffee-cup2.jpeg" alt="latte" title="Latte"> <img src="images/myfolder/coffee-cup3.jpg" alt="Ethiopian"  title="Ethiopian Coffee"> <img src="images/myfolder/coffee-cup4.jpg" alt="" title="Indonesian Kopi Tubruk"> <img src="images/myfolder/coffee-cup5.jpg" alt="Viennese " title="Viennese Coffee"> <img src="images/myfolder/coffee.jpg" alt="Kopi" title="Kopi Luwak"></div>
+      <div class="grid-3"> <img src="../images/myfolder/coffee-cup.jpeg" title="Cappuccino" alt="Image1"> <img src="../images/myfolder/coffee-cup2.jpeg" alt="latte" title="Latte"> <img src="../images/myfolder/coffee-cup3.jpg" alt="Ethiopian"  title="Ethiopian Coffee"> <img src="../images/myfolder/coffee-cup4.jpg" alt="" title="Indonesian Kopi Tubruk"> <img src="../images/myfolder/coffee-cup5.jpg" alt="Viennese " title="Viennese Coffee"> <img src="../images/myfolder/coffee.jpg" alt="Kopi" title="Kopi Luwak"></div>
     </div>
   </div>
-  <div class="footersection">
+<div class="footersection">
       <div class="container">
         <div class="opening-time-closetym reservationtable"
 				style="position: relative;">
@@ -223,7 +223,7 @@ hr {
         </div>
     </div>
   </div>
-  <!-- InstanceEndEditable -->
+  <!-- TemplateEndEditable -->
     <hr>
   <div class="footersectiontwo">
     <div class="container">
@@ -241,7 +241,7 @@ hr {
       <div class="footergroup">
         <h5>Customer support</h5>
         <ul>
-          <li><a href="contact.html">contact</a></li>
+          <li><a href="../contact.html">contact</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
       </div>
@@ -256,13 +256,13 @@ hr {
     </div>
   </div>
 </div>
-<!-- InstanceBeginEditable name="External Scripts" -->
+<!-- TemplateBeginEditable name="External Scripts" -->
 	
-<!-- InstanceEndEditable --> 
+<!-- TemplateEndEditable --> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
-<script src="js/hillock-coffee.js"></script> 
-<!-- InstanceBeginEditable name="Internal Scripts" -->
+<script src="../js/hillock-coffee.js"></script> 
+<!-- TemplateBeginEditable name="Internal Scripts" -->
 	
-<!-- InstanceEndEditable --> 
+<!-- TemplateEndEditable --> 
 </body>
-<!-- InstanceEnd --></html>
+</html>
