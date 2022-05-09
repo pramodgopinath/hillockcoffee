@@ -1,0 +1,251 @@
+/* CSS Document */
+
+.headersection {
+/*width:100%;
+	height:106px;
+	margin:0 auto;
+	float:left;*/
+}
+.menusection {
+	background-color: #000;
+	width: 100%;
+	height: 50px;
+	padding-right: 20px;
+}
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topnav {
+	overflow: visible;
+	background-color: #201717;
+	position: relative;
+}
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: right;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	color: #FFF;
+}
+.toplogo {
+	float : none;
+}
+.topnav a:hover {
+	background-colour: #ddd;
+	color: rgb(247, 241, 241);
+}
+.topnav a.active {
+	background-colour: #2196f3;
+	colour: white;
+}
+.topnav .search-s {
+	float: left;
+	display: flex;
+}
+.topnav input[ type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    display: block;
+    width: 100%;
+}
+.toplinks {
+	float: none;
+}
+.topnav .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+.topvav .search-container button:hover {
+	background: #ccc;
+}
+.topnav .search-container {
+	margin-right: 20px;
+}
+.bannersection {
+    background: url(cup-and-beans1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25vw 5%;
+}
+.bannersection h1{
+	text-align: center;
+	width:100%;
+}
+
+
+
+}
+.bodysection {
+	background-image: url(images/aboutbg.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 60px 15px;
+	background-size: cover;
+	margin: 0 auto;
+	background-blend-mode: overlay;
+}
+.cofeebkngheading{
+	color: white;
+}
+.squarebox {
+    width: auto;
+    min-height: 650px;
+    background-image: url(pouch-with-coffee-beans_23-2148180176.jpg);
+    position: relative;
+    z-index: 99;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 15px;
+}
+.squarebox .form-group label{
+	color: #FFF;
+	float: left;
+}
+.bottom {
+	width: 248px;
+	height: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #333;
+	border-left-color: #333;
+}
+.bannertext {
+	color: white;
+	letter-spacing: 6px;
+	padding-top: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 5%;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px #280e0b, 1px 1px 5px #280E0B, 1px 1px 5px #280E0B, 1px 1px 5px #280E0B;
+	display: block;
+}
+.container{
+border-radius: 20px;
+margin-top: 50px;
+
+
+
+
+}
+
+.footersection {
+	width: 100%;
+	background-image: url(footerbg.jpg);
+	background-size: cover;
+	margin: 0 auto;
+	padding: 60px 20px;
+}
+.footersection openingtime {
+	width: 40%;
+	height: 15px;
+	color: #FFF;
+	float: left;
+}
+.footersectioninnertext {
+	width: 30%;
+	height: 55px;
+	color: white;
+	float: left;
+	font-size: 25px;
+	text-align: center;
+	font-style: normal;
+	margin-left: 170px;
+	padding-top: 50px;
+}
+.footersectiontwo {
+    width: 100%;
+    margin: 0 auto;
+    background: #272626;
+    margin-bottom: 0px;
+    background-size: 100%;
+    padding: 60px 20px 10px;
+}
+.footergroup {
+	float: left;
+	padding-right: 70px;
+	margin-bottom: 50px;
+}
+.footergroup h5 {
+	color: #888888;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0px 0px 0px 0px;
+	margin-left: 20px;
+}
+.footergroup li {
+	padding: 3px 0px;
+	list-style: none;
+}
+.footergroup li a {
+	font-size: 14px;
+	color: #6c6c6c;
+	text-decoration: none;
+}
+.footergroup li a:hover {
+	text-decoration: underline;
+}
+.socialmediaicon li {
+	list-style: none;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+#headersection.headerlogo {
+	float: right;
+	padding: 10px opx;
+}
+.headersearch {
+	float: right;
+	margin: 5px 0px 50px;
+}
+#headersection.headersearch input[type="text"] {
+	border: 1px solid #cccccc;
+	padding: 5px 30px 5px 10px;
+	width: 180px;
+	border-radius: 5px;
+}
+#headersection.headersearchicon {
+	width: 40px;
+	height: 30px;
+	background-image: url(magnifying-glass.png);
+	border: 0px solid #fff;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.facebook {
+	background-image: url(socialmedia%20icone/facebook.svg);
+	float: left;
+}
+.instagram {
+	background-image: url(socialmedia%20icone/instagram.svg);
+	float: left;
+}
