@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zxx"><!-- InstanceBegin template="/Templates/Hillock-Template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Hillock Coffee</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="Untitled-2.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/microtip.css">
+<style>
+img {
+	max-width: 100%;
+	height: auto;
+}
+hr {
+	border: 0;
+	margin: 0px;
+	border-top: 2px solid brown;
+}
+/*
+.navbar-default.topnav {
+    background: #201717;
+    border: none;
+    border-radius: 0px;
+	margin-bottom: 0px;
+}
+	.navbar-default.topnav .navbar-brand{
+		height: auto;
+	}
+*/
+#menubtn {
+	display: none;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted rgb(5, 5, 5);
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+.cover {
+	width: 100%;
+	overflow: hidden;
+}
+.grid-3 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 24px;
+}
+.nav-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width:991px) {
+#menubtn {
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -13px;
+	background-color: #e6d0b8;
+}
+#menutoggle.active {
+	display: block;
+}
+#menutoggle {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	right: 0px;
+	bottom: auto;
+	background-color: #201717;
+	padding: 12px;
+}
+.nav-flex {
+	display: block;
+}
+.topnav a {
+	float: none;
+	text-align: left;
+}
+}
+
+@media (max-width:767px) {
+.grid-3 {
+	grid-template-columns: auto auto;
+}
+}
+
+@media (max-width:319px) {
+.grid-3 {
+	grid-template-columns: auto;
+}
+}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<link href="Untitled-bookingform.css" rel="stylesheet" type="text/css">
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<div class="cover"> 
+  <!--  <div class="headerlogo"></div>-->
+  <div class="topnav nav-flex">
+    <div class="toplogo"> <img src="logo1.png" alt="Logo" /> </div>
+    <button type="button" id="menubtn">&#9776;</button>
+    <div id="menutoggle" class="nav-flex">
+      <div class="toplinks"> <a class="active" href="index.html">Home</a> <a href="index.html#about">About</a> <a href="deliverybooking.html">Booking Delivery</a> <a href="index.html#Reserve">Reservation</a> </div>
+      <div class="search-container">
+        <input type="text" placeholder="search entire web site here" name="search">
+        <button type="submit"> <i class="fa fa-search"></i> GO </button>
+      </div>
+    </div>
+  </div>
+  <!--<nav class="navbar navbar-default topnav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand" href="#"><img src="logo1.png" alt="Logo" /></a></div>
+      <div class="collapse navbar-collapse" id="defaultNavbar1">
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+		<ul class="nav navbar-nav navbar-right toplinks">
+          <li class="active"><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+			<li><a href="#Delivery">Delivery</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#reserve">Reservation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>--><!-- InstanceBeginEditable name="ContentArea1" -->
+	<div class="bannersection">
+    <div class="squarebox">
+      <div class="cofeebkngheading">
+        <h1>PRODUCT BOOKING</h1>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group ">
+            <label for="name" style="color: #fff; float:left;">Name </label>
+              <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="form-group ">
+              <label for="last-name" style="color: #fff; float:left;">Last Name </label>
+              <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6">
+
+            <div class="form-group ">
+              <label for="Emailid" style="color: #fff; float:left;">Email-Id</label>
+              <input type="text" class="form-control" id="Emailid" placeholder="Email-id">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group ">
+              <label for="MobileNumber" style="color: #fff; float:left;">Mobile</label>
+              <input type="text" class="form-control is-valid" id="MobileNumber" placeholder="MobileNumber">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group ">
+          <label class="col-form-label" for="date" style="color: #FFF; float:left;">Date</label>
+          <input type="date" class="form-control" id="date">
+          
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group ">
+            <label for="se" style="color: #FFF; float:left;">Select </label>
+          <select  class="form-control" id="se" aria-label="Default select example">
+            <option selected disabled>How much you want</option>
+            <option value="">1kg</option>
+            <option value="">5kg</option>
+            <option value="">8k</option>
+          </select>
+            
+        
+         
+        
+        </div>
+    </div>
+		  </div>
+    <div class="row">
+      <div class="col-sm-12">
+      <div class="form-group">
+      <label for="ccnumber" style="color: #FFF;float: left;" >Credit Card Number</label>
+      
+      
+      <div class="form-group">
+      <input class="form-control" id="ccnumber" name="ccnumber" type="text" placeholder="0000 0000 0000 0000" autocomplete="email" >
+      <div class="input-group-append">
+      <span class="input-group-text">
+      <i class="mdi mdi-credit-card"></i>
+      </span>
+      </div>
+      </div> 
+      </div>
+      </div>
+			</div>
+      <div class="row">
+        <div class="form-group col-md-3">
+        <label for="ccmonth" class ="deliveryfont" >Month</label>
+        <select class="form-control" id="ccmonth">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        </select>
+        </div>
+        <div class="form-group col-md-4">
+        <label for="ccyear" class ="deliveryfont">Year</label>
+        <select class="form-control" id="ccyear">
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+        <option>2025</option>
+        </select>
+        </div>
+        <div class="col-md-5">
+        <div class="form-group">
+        <label for="cvv" class ="deliveryfont">CVV/CVC</label>
+        <input class="form-control" id="cvv" type="text" placeholder="123">
+        </div>
+        </div>
+        </div>
+        
+	
+	<div class="card-footer">
+   <button class="btn btn-sm btn-success" style="float:right" type="submit">
+<i class="mdi mdi-gamepad-circle"></i> Submit</button>
+</div>
+      </div><!--Container-->
+
+    </div>
+
+  </div>
+  <!-- InstanceEndEditable -->
+    <hr>
+  <div class="footersectiontwo">
+    <div class="container">
+      <div class="footergroup">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About the company</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">career</a></li>
+          <li><a href="#">Address</a></li>
+        </ul>
+        <div class="headersearchicon"></div>
+      </div>
+      <div class="footergroup">
+        <h5>Customer support</h5>
+        <ul>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footergroup">
+        <h5>Follow Us</h5>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagrame</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- InstanceBeginEditable name="External Scripts" -->
+	
+<!-- InstanceEndEditable --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<script src="js/hillock-coffee.js"></script> 
+<!-- InstanceBeginEditable name="Internal Scripts" -->
+	
+<!-- InstanceEndEditable --> 
+</body>
+<!-- InstanceEnd --></html>
